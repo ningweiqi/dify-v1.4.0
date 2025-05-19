@@ -88,8 +88,8 @@ BASE_API_AND_DOCKER_COMPOSE_CONFIG_SET_DIFF = {
     "WEAVIATE_GRPC_ENABLED",
 }
 
-API_CONFIG_SET = set(dotenv_values(Path("api") / Path(".env")).keys())
-DOCKER_CONFIG_SET = set(dotenv_values(Path("docker") / Path(".env")).keys())
+API_CONFIG_SET = set(dotenv_values(Path("api") / Path(".env.example")).keys())
+DOCKER_CONFIG_SET = set(dotenv_values(Path("docker") / Path(".env.example")).keys())
 DOCKER_COMPOSE_CONFIG_SET = set()
 
 with open(Path("docker") / Path("docker-compose.yaml")) as f:

@@ -1,10 +1,10 @@
-![cover-v5-optimized](https://github.com/langgenius/dify/assets/13230914/f9e19af5-61ba-4119-b926-d10c4c06ebab)
+![cover-v5-optimized](./images/GitHub_README_if.png)
 
 <p align="center">
   <a href="https://cloud.dify.ai">Dify Cloud</a> ·
   <a href="https://docs.dify.ai/getting-started/install-self-hosted">الاستضافة الذاتية</a> ·
   <a href="https://docs.dify.ai">التوثيق</a> ·
-  <a href="https://udify.app/chat/22L1zSxg6yW1cWQg">استفسار الشركات (للإنجليزية فقط)</a>
+  <a href="https://dify.ai/pricing">نظرة عامة على منتجات Dify</a>
 </p>
 
 <p align="center">
@@ -53,8 +53,6 @@
 </br> </br>
 
 **1. سير العمل**:  قم ببناء واختبار سير عمل الذكاء الاصطناعي القوي على قماش بصري، مستفيدًا من جميع الميزات التالية وأكثر.
-
-  <https://github.com/langgenius/dify/assets/13230914/356df23e-1604-483d-80a6-9517ece318aa>
 
 **2. الدعم الشامل للنماذج**: تكامل سلس مع مئات من LLMs الخاصة / مفتوحة المصدر من عشرات من موفري التحليل والحلول المستضافة ذاتيًا، مما يغطي GPT و Mistral و Llama3 وأي نماذج متوافقة مع واجهة OpenAI API. يمكن العثور على قائمة كاملة بمزودي النموذج المدعومين [هنا](https://docs.dify.ai/getting-started/readme/model-providers).
 
@@ -171,7 +169,7 @@
 
 ```bash
 cd docker
-cp .env .env
+cp .env.example .env
 docker compose up -d
 ```
 
@@ -181,13 +179,15 @@ docker compose up -d
 
 ## الخطوات التالية
 
-إذا كنت بحاجة إلى تخصيص الإعدادات، فيرجى الرجوع إلى التعليقات في ملف [.env.example](docker/.env) وتحديث القيم المقابلة في ملف `.env`. بالإضافة إلى ذلك، قد تحتاج إلى إجراء تعديلات على ملف `docker-compose.yaml` نفسه، مثل تغيير إصدارات الصور أو تعيينات المنافذ أو نقاط تحميل وحدات التخزين، بناءً على بيئة النشر ومتطلباتك الخاصة. بعد إجراء أي تغييرات، يرجى إعادة تشغيل `docker-compose up -d`. يمكنك العثور على قائمة كاملة بمتغيرات البيئة المتاحة [هنا](https://docs.dify.ai/getting-started/install-self-hosted/environments).
+إذا كنت بحاجة إلى تخصيص الإعدادات، فيرجى الرجوع إلى التعليقات في ملف [.env.example](docker/.env.example) وتحديث القيم المقابلة في ملف `.env`. بالإضافة إلى ذلك، قد تحتاج إلى إجراء تعديلات على ملف `docker-compose.yaml` نفسه، مثل تغيير إصدارات الصور أو تعيينات المنافذ أو نقاط تحميل وحدات التخزين، بناءً على بيئة النشر ومتطلباتك الخاصة. بعد إجراء أي تغييرات، يرجى إعادة تشغيل `docker-compose up -d`. يمكنك العثور على قائمة كاملة بمتغيرات البيئة المتاحة [هنا](https://docs.dify.ai/getting-started/install-self-hosted/environments).
 
 يوجد مجتمع خاص بـ [Helm Charts](https://helm.sh/) وملفات YAML التي تسمح بتنفيذ Dify على Kubernetes للنظام من الإيجابيات العلوية.
 
 - [رسم بياني Helm من قبل @LeoQuote](https://github.com/douban/charts/tree/master/charts/dify)
 - [رسم بياني Helm من قبل @BorisPolonsky](https://github.com/BorisPolonsky/dify-helm)
+- [رسم بياني Helm من قبل @magicsong](https://github.com/magicsong/ai-charts)
 - [ملف YAML من قبل @Winson-030](https://github.com/Winson-030/dify-kubernetes)
+- [ملف YAML من قبل @wyy-holding](https://github.com/wyy-holding/dify-k8s)
 
 #### استخدام Terraform للتوزيع
 

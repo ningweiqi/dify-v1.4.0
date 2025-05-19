@@ -10,7 +10,7 @@ const translation = {
   },
   teamMembers: 'Team Members',
   upgradeBtn: {
-    plain: 'Upgrade Plan',
+    plain: 'View Plan',
     encourage: 'Upgrade Now',
     encourageShort: 'Upgrade',
   },
@@ -55,7 +55,12 @@ const translation = {
     vectorSpaceTooltip: 'Documents with the High Quality indexing mode will consume Knowledge Data Storage resources. When Knowledge Data Storage reaches the limit, new documents will not be uploaded.',
     documentsRequestQuota: '{{count,number}}/min Knowledge Request Rate Limit',
     documentsRequestQuotaTooltip: 'Specifies the total number of actions a workspace can perform per minute within the knowledge base, including dataset creation, deletion, updates, document uploads, modifications, archiving, and knowledge base queries. This metric is used to evaluate the performance of knowledge base requests. For example, if a Sandbox user performs 10 consecutive hit tests within one minute, their workspace will be temporarily restricted from performing the following actions for the next minute: dataset creation, deletion, updates, and document uploads or modifications. ',
+    apiRateLimit: 'API Rate Limit',
+    apiRateLimitUnit: '{{count,number}}/day',
+    unlimitedApiRate: 'No API Rate Limit',
+    apiRateLimitTooltip: 'API Rate Limit applies to all requests made through the Dify API, including text generation, chat conversations, workflow executions, and document processing.',
     documentProcessingPriority: ' Document Processing',
+    documentProcessingPriorityUpgrade: 'Process more data with higher accuracy at faster speeds.',
     priority: {
       'standard': 'Standard',
       'priority': 'Priority',
@@ -101,18 +106,22 @@ const translation = {
   plans: {
     sandbox: {
       name: 'Sandbox',
+      for: 'Free Trial of Core Capabilities',
       description: 'Free Trial of Core Capabilities',
     },
     professional: {
       name: 'Professional',
+      for: 'For Independent Developers/Small Teams',
       description: 'For Independent Developers/Small Teams',
     },
     team: {
       name: 'Team',
+      for: 'For Medium-sized Teams',
       description: 'For Medium-sized Teams',
     },
     community: {
       name: 'Community',
+      for: 'For Individual Users, Small Teams, or Non-commercial Projects',
       description: 'For Individual Users, Small Teams, or Non-commercial Projects',
       price: 'Free',
       btnText: 'Get Started with Community',
@@ -125,6 +134,7 @@ const translation = {
     },
     premium: {
       name: 'Premium',
+      for: 'For Mid-sized Organizations and Teams',
       description: 'For Mid-sized Organizations and Teams',
       price: 'Scalable',
       priceTip: 'Based on Cloud Marketplace',
@@ -140,6 +150,7 @@ const translation = {
     },
     enterprise: {
       name: 'Enterprise',
+      for: 'For large-sized Teams',
       description: 'For Enterprise Require Organization-wide Security, Compliance, Scalability, Control and More Advanced Features',
       price: 'Custom',
       priceTip: 'Annual Billing Only',
@@ -163,8 +174,11 @@ const translation = {
     fullSolution: 'Upgrade your plan to get more space.',
   },
   apps: {
-    fullTipLine1: 'Upgrade your plan to',
-    fullTipLine2: 'build more apps.',
+    fullTip1: 'Upgrade to create more apps',
+    fullTip1des: 'You\'ve reached the limit of build apps on this plan',
+    fullTip2: 'Plan limit reached',
+    fullTip2des: 'It is recommended to clean up inactive applications to free up usage, or contact us.',
+    contactUs: 'Contact us',
   },
   annotatedResponse: {
     fullTipLine1: 'Upgrade your plan to',

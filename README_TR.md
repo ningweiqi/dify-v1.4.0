@@ -1,10 +1,10 @@
-![cover-v5-optimized](https://github.com/langgenius/dify/assets/13230914/f9e19af5-61ba-4119-b926-d10c4c06ebab)
+![cover-v5-optimized](./images/GitHub_README_if.png)
 
 <p align="center">
   <a href="https://cloud.dify.ai">Dify Bulut</a> ·
   <a href="https://docs.dify.ai/getting-started/install-self-hosted">Kendi Sunucunuzda Barındırma</a> ·
   <a href="https://docs.dify.ai">Dokümantasyon</a> ·
-  <a href="https://udify.app/chat/22L1zSxg6yW1cWQg">Yalnızca İngilizce: Kurumsal Sorgulama</a>
+  <a href="https://dify.ai/pricing">Dify ürün seçeneklerine genel bakış</a>
 </p>
 
 <p align="center">
@@ -54,11 +54,6 @@ Dify, açık kaynaklı bir LLM uygulama geliştirme platformudur. Sezgisel aray�
 
 **1. Workflow**: 
 Görsel bir arayüz üzerinde güçlü AI iş akışları oluşturun ve test edin, aşağıdaki tüm özellikleri ve daha fazlasını kullanarak.
-
-
-  https://github.com/langgenius/dify/assets/13230914/356df23e-1604-483d-80a6-9517ece318aa
-
-
 
 **2. Kapsamlı model desteği**:
 Çok sayıda çıkarım sağlayıcısı ve kendi kendine barındırılan çözümlerden yüzlerce özel / açık kaynaklı LLM ile sorunsuz entegrasyon sağlar. GPT, Mistral, Llama3 ve OpenAI API uyumlu tüm modelleri kapsar. Desteklenen model sağlayıcılarının tam listesine [buradan](https://docs.dify.ai/getting-started/readme/model-providers) ulaşabilirsiniz.
@@ -181,7 +176,7 @@ Dify sunucusunu başlatmanın en kolay yolu, [docker-compose.yml](docker/docker-
 
 ```bash
 cd docker
-cp .env .env
+cp .env.example .env
 docker compose up -d
 ```
 
@@ -191,13 +186,14 @@ docker compose up -d
 
 ## Sonraki adımlar
 
-Yapılandırmayı özelleştirmeniz gerekiyorsa, lütfen [.env.example](docker/.env) dosyamızdaki yorumlara bakın ve `.env` dosyanızdaki ilgili değerleri güncelleyin. Ayrıca, spesifik dağıtım ortamınıza ve gereksinimlerinize bağlı olarak `docker-compose.yaml` dosyasının kendisinde de, imaj sürümlerini, port eşlemelerini veya hacim bağlantılarını değiştirmek gibi ayarlamalar yapmanız gerekebilir. Herhangi bir değişiklik yaptıktan sonra, lütfen `docker-compose up -d` komutunu tekrar çalıştırın. Kullanılabilir tüm ortam değişkenlerinin tam listesini [burada](https://docs.dify.ai/getting-started/install-self-hosted/environments) bulabilirsiniz.
+Yapılandırmayı özelleştirmeniz gerekiyorsa, lütfen [.env.example](docker/.env.example) dosyamızdaki yorumlara bakın ve `.env` dosyanızdaki ilgili değerleri güncelleyin. Ayrıca, spesifik dağıtım ortamınıza ve gereksinimlerinize bağlı olarak `docker-compose.yaml` dosyasının kendisinde de, imaj sürümlerini, port eşlemelerini veya hacim bağlantılarını değiştirmek gibi ayarlamalar yapmanız gerekebilir. Herhangi bir değişiklik yaptıktan sonra, lütfen `docker-compose up -d` komutunu tekrar çalıştırın. Kullanılabilir tüm ortam değişkenlerinin tam listesini [burada](https://docs.dify.ai/getting-started/install-self-hosted/environments) bulabilirsiniz.
 
 Yüksek kullanılabilirliğe sahip bir kurulum yapılandırmak isterseniz, Dify'ın Kubernetes üzerine dağıtılmasına olanak tanıyan topluluk katkılı [Helm Charts](https://helm.sh/) ve YAML dosyaları mevcuttur.
 
 - [@LeoQuote tarafından Helm Chart](https://github.com/douban/charts/tree/master/charts/dify)
 - [@BorisPolonsky tarafından Helm Chart](https://github.com/BorisPolonsky/dify-helm)
 - [@Winson-030 tarafından YAML dosyası](https://github.com/Winson-030/dify-kubernetes)
+- [@wyy-holding tarafından YAML dosyası](https://github.com/wyy-holding/dify-k8s)
 
 #### Dağıtım için Terraform Kullanımı
 

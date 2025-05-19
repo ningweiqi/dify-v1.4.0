@@ -1,10 +1,10 @@
-![cover-v5-optimized](https://github.com/langgenius/dify/assets/13230914/f9e19af5-61ba-4119-b926-d10c4c06ebab)
+![cover-v5-optimized](./images/GitHub_README_if.png)
 
 <p align="center">
   <a href="https://cloud.dify.ai">Dify Cloud</a> ·
   <a href="https://docs.dify.ai/getting-started/install-self-hosted">Auto-hébergement</a> ·
   <a href="https://docs.dify.ai">Documentation</a> ·
-  <a href="https://udify.app/chat/22L1zSxg6yW1cWQg">Demande d’entreprise (en anglais seulement)</a>
+  <a href="https://dify.ai/pricing">Présentation des différentes offres Dify</a>
 </p>
 
 <p align="center">
@@ -58,11 +58,6 @@ Dify est une plateforme de développement d'applications LLM open source. Son in
 
 **1. Flux de travail** : 
   Construisez et testez des flux de travail d'IA puissants sur un canevas visuel, en utilisant toutes les fonctionnalités suivantes et plus encore.
-
-
-  https://github.com/langgenius/dify/assets/13230914/356df23e-1604-483d-80a6-9517ece318aa
-
-
 
 **2. Prise en charge complète des modèles** : 
   Intégration transparente avec des centaines de LLM propriétaires / open source provenant de dizaines de fournisseurs d'inférence et de solutions auto-hébergées, couvrant GPT, Mistral, Llama3, et tous les modèles compatibles avec l'API OpenAI. Une liste complète des fournisseurs de modèles pris en charge se trouve [ici](https://docs.dify.ai/getting-started/readme/model-providers).
@@ -187,7 +182,7 @@ La manière la plus simple de démarrer le serveur Dify est d'exécuter notre fi
 
 ```bash
 cd docker
-cp .env .env
+cp .env.example .env
 docker compose up -d
 ```
 
@@ -197,13 +192,15 @@ Après l'exécution, vous pouvez accéder au tableau de bord Dify dans votre nav
 
 ## Prochaines étapes
 
-Si vous devez personnaliser la configuration, veuillez vous référer aux commentaires dans notre fichier [.env.example](docker/.env) et mettre à jour les valeurs correspondantes dans votre fichier `.env`. De plus, vous devrez peut-être apporter des modifications au fichier `docker-compose.yaml` lui-même, comme changer les versions d'image, les mappages de ports ou les montages de volumes, en fonction de votre environnement de déploiement et de vos exigences spécifiques. Après avoir effectué des modifications, veuillez réexécuter `docker-compose up -d`. Vous pouvez trouver la liste complète des variables d'environnement disponibles [ici](https://docs.dify.ai/getting-started/install-self-hosted/environments).
+Si vous devez personnaliser la configuration, veuillez vous référer aux commentaires dans notre fichier [.env.example](docker/.env.example) et mettre à jour les valeurs correspondantes dans votre fichier `.env`. De plus, vous devrez peut-être apporter des modifications au fichier `docker-compose.yaml` lui-même, comme changer les versions d'image, les mappages de ports ou les montages de volumes, en fonction de votre environnement de déploiement et de vos exigences spécifiques. Après avoir effectué des modifications, veuillez réexécuter `docker-compose up -d`. Vous pouvez trouver la liste complète des variables d'environnement disponibles [ici](https://docs.dify.ai/getting-started/install-self-hosted/environments).
 
 Si vous souhaitez configurer une configuration haute disponibilité, la communauté fournit des [Helm Charts](https://helm.sh/) et des fichiers YAML, à travers lesquels vous pouvez déployer Dify sur Kubernetes.
 
 - [Helm Chart par @LeoQuote](https://github.com/douban/charts/tree/master/charts/dify)
 - [Helm Chart par @BorisPolonsky](https://github.com/BorisPolonsky/dify-helm)
+- [Helm Chart par @magicsong](https://github.com/magicsong/ai-charts)
 - [Fichier YAML par @Winson-030](https://github.com/Winson-030/dify-kubernetes)
+- [Fichier YAML par @wyy-holding](https://github.com/wyy-holding/dify-k8s)
 
 #### Utilisation de Terraform pour le déploiement
 

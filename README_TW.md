@@ -1,4 +1,4 @@
-![cover-v5-optimized](https://github.com/langgenius/dify/assets/13230914/f9e19af5-61ba-4119-b926-d10c4c06ebab)
+![cover-v5-optimized](./images/GitHub_README_if.png)
 
 <p align="center">
   📌 <a href="https://dify.ai/blog/introducing-dify-workflow-file-upload-a-demo-on-ai-podcast">介紹 Dify 工作流程檔案上傳功能：重現 Google NotebookLM Podcast</a>
@@ -8,7 +8,7 @@
   <a href="https://cloud.dify.ai">Dify 雲端服務</a> ·
   <a href="https://docs.dify.ai/getting-started/install-self-hosted">自行託管</a> ·
   <a href="https://docs.dify.ai">說明文件</a> ·
-  <a href="https://udify.app/chat/22L1zSxg6yW1cWQg">企業諮詢</a>
+  <a href="https://dify.ai/pricing">產品方案概覽</a>
 </p>
 
 <p align="center">
@@ -69,7 +69,7 @@ Dify 是一個開源的 LLM 應用程式開發平台。其直觀的界面結合�
 ```bash
 cd dify
 cd docker
-cp .env .env
+cp .env.example .env
 docker compose up -d
 ```
 
@@ -85,8 +85,6 @@ docker compose up -d
 
 **1. 工作流程**：
 在視覺化畫布上建立和測試強大的 AI 工作流程，利用以下所有功能及更多。
-
-https://github.com/langgenius/dify/assets/13230914/356df23e-1604-483d-80a6-9517ece318aa
 
 **2. 全面的模型支援**：
 無縫整合來自數十個推理提供商和自託管解決方案的數百個專有/開源 LLM，涵蓋 GPT、Mistral、Llama3 和任何與 OpenAI API 兼容的模型。您可以在[此處](https://docs.dify.ai/getting-started/readme/model-providers)找到支援的模型提供商完整列表。
@@ -197,13 +195,14 @@ Dify 的所有功能都提供相應的 API，因此您可以輕鬆地將 Dify �
 
 ## 進階設定
 
-如果您需要自定義配置，請參考我們的 [.env.example](docker/.env) 文件中的註釋，並在您的 `.env` 文件中更新相應的值。此外，根據您特定的部署環境和需求，您可能需要調整 `docker-compose.yaml` 文件本身，例如更改映像版本、端口映射或卷掛載。進行任何更改後，請重新運行 `docker-compose up -d`。您可以在[這裡](https://docs.dify.ai/getting-started/install-self-hosted/environments)找到可用環境變數的完整列表。
+如果您需要自定義配置，請參考我們的 [.env.example](docker/.env.example) 文件中的註釋，並在您的 `.env` 文件中更新相應的值。此外，根據您特定的部署環境和需求，您可能需要調整 `docker-compose.yaml` 文件本身，例如更改映像版本、端口映射或卷掛載。進行任何更改後，請重新運行 `docker-compose up -d`。您可以在[這裡](https://docs.dify.ai/getting-started/install-self-hosted/environments)找到可用環境變數的完整列表。
 
 如果您想配置高可用性設置，社區貢獻的 [Helm Charts](https://helm.sh/) 和 YAML 文件允許在 Kubernetes 上部署 Dify。
 
 - [由 @LeoQuote 提供的 Helm Chart](https://github.com/douban/charts/tree/master/charts/dify)
 - [由 @BorisPolonsky 提供的 Helm Chart](https://github.com/BorisPolonsky/dify-helm)
 - [由 @Winson-030 提供的 YAML 文件](https://github.com/Winson-030/dify-kubernetes)
+- [由 @wyy-holding 提供的 YAML 文件](https://github.com/wyy-holding/dify-k8s)
 
 ### 使用 Terraform 進行部署
 
